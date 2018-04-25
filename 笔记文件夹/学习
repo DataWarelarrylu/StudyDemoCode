@@ -1,0 +1,8 @@
+--删掉容器
+docker rm -f cf6977bfd58e
+--删除image
+docker rmi 2532d6334413
+--删除所有的image
+docker rmi $(docker images -q)
+--安装hadoop hive的文档
+https://segmentfault.com/a/1190000010976995
